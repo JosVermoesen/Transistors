@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <meta
+      name="description"
+      content="YO5OFH, Csaba's HAM RADIO home page - Transistor marking codes"
+    />
+    <meta
+      name="keywords"
+      content="yo5ofh, Csaba Gajdos, ham radio, cw, ssb, rtty, sstv, packet radio, solar flux, propagation, psk31, antenna, callbook, dx, bbs, aprs, amateur radio, uhf, vhf, tcp, ax-25, qsl, qsl info"
+    />
+    <title>Transistor marking codes</title>
+  </head>
+
+  <body background="background.jpg">
+    <div align="center">
+      
+        <table width="768" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td width="768">
+                <p align="center">
+                  <b
+                    ><font size="4" face="Verdana" color="#0000FF"
+                      >Transistor marking codes</font
+                    ></b
+                  >
+                </p>
+
+                <pre><font size="2" face="Verdana">
+                  We are lucky with transistors that, apart from a few oddities which I'll talk
+                  about later, most markings follow one of these codes.
+                  ICs are more tricky as you're often dealing with custom chips or mask
+                  programmed devices with manufacturers individual codes.
+                  A quick hint though: always look for known numbers (eg 723, 6502, 2764) etc
+                  between the suffix and prefix, and beware of the date code.
+
+                  Right, back to transistors. The three standard transistor marking schemes are:
+
+                  <b>
+                    1. Joint Electron Device Engineering Council (JEDEC).
+                  </b>                  
+                  These take the form:
+                  
+                  digit, letter, serial number, [suffix]
+                  where the letter is always 'N'
+
+                  the first digit is one less than the number of legs, (2 for transistors unless
+                  they're crippled although I'm not sure about 4 legged transistors maybe they
+                  get a 3) except for 4N and 5N which are reserved for optocouplers.
+                  
+                  The serial number runs from 100 to 9999 and tell nothing about the transistor
+                  except its approximate time of introduction.
+
+                  The (optional) suffix indicates the gain (hfe) group of the device:
+
+                    A = low gain
+                    B = medium gain
+                    C = high gain
+                    No suffix = ungrouped (any gain).
+
+                  See the data sheet for the actual gain spread and groupings.
+                  The reason for gain grouping is that the low gain devices are fractionally
+                  cheaper than the high gain devices, resulting in savings for high volume users.
+
+                  Examples-  2N3819, 2N2221A, 2N904.
+
+                  <b>
+                    2. Japanese Industrial Standard (JIS).
+                  </b>                  
+                  These take the form:
+
+                  digit, two letters, serial number, [suffix]
+                  
+                  Again, the digit is one less than the number of legs.
+
+                  The letters indicate the applicatin area and flavour of the device according
+                  to the following code:
+
+                  SA:	PNP HF transistor	SB:	PNP AF transistor
+                  SC:	NPN HF transistor	SD:	NPN AF transistor
+                  SE:	Diodes			SF:	Thyristors
+                  SG:	Gunn devices		SH:	UJT
+                  SJ:	P-channel FET/MOSFET	SK:	N-channel FET/MOSFET
+                  SM:	Triac			SQ:	LED
+                  SR:	Rectifier		SS:	Signal diodes
+                  ST:	Avalanche diodes	SV:	Varicaps
+                  SZ:	Zener diodes
+
+                  The serial number runs from 10-9999.
+
+                  The (optional) suffix ndicates that the type is approved for use by various
+                  Japanese organisations.
+
+                  NOTE. since the code for transistors always begins with 2S, it is sometimes
+                  (more often than not is seems) ommitted so, for example, a 2SC733 would be
+                  marked C 733.
+
+                  Examples-  2SA1187, 2SB646, 2SC733.
+                  
+                  <b>
+                    3. Pro-electron.
+                  </b>
+                  These take the form:
+
+                  two letters, [letter], serial number, [suffix]
+
+                  The first letter indicates the material:
+                    A = Ge
+                    B = Si
+                    C = GaAs
+                    R = compound materials.
+
+                  Needless to say the biggest majority of transistors begin with a B.
+
+                  The second letter indicates the device application:
+
+                  A:	Diode RF		B: Variac
+                  C:	transistor, AF, small signal
+                  D:	transistor, AF, power
+                  E:	Tunnel diode
+                  F:	transistor, HF, small signal
+                  K:	Hall effect device
+                  L:	Transistor, HF, power
+                  N:	Optocoupler
+                  P:	Radiation sensitive device
+                  Q:	Radiation producing device
+                  R:	Thyristor, Low power
+                  T:	Thyristor, Power
+                  U:	Transistor, power, switching
+                  Y:	Rectifier
+                  Z:	Zener, or voltage regulator diode
+
+                The third letter indicates that the device is intended for industrial or
+                professional rather than commercial applications. It is usually a W,X,Y or Z.
+
+                The serial number runs from 100-9999.
+
+                The suffix indicates the gain grouping, as for JEDEC.
+
+                Examples-  BC108A, BAW68, BF239, BFY51.
+                
+                Apart from JEDEC, JIS and Pro-electron, manufacturers often introduce their
+                own types, for commercial reasons (ie to get their name into the code) or to
+                emphasise that the range belongs to a specialist application.
+                
+                Common brand specific prefixes are:
+
+                  MJ:	Motorolla power, metal case
+                  MJE:	Motorolla power, plastic case
+                  MPS:	Motorolla low power, plastic case
+                  MRF:	Motorolla HF, VHF and microwave transistor
+                  RCA:	RCA
+                  RCS:	RCS
+                  TIP:	Texas Instruments power transistor (platic case)
+                  TIPL:	TI planar power transistor
+                  TIS:	TI small signal transistor (plastic case)
+                  ZT:	Ferranti
+                  ZTX:	Ferranti
+
+                Examples-  ZTX302, TIP31A, MJE3055, TIS43.
+
+                Many manufacturers also make custom parts for large volume OEM use.
+                These parts are optimised for use in a given part of a given circuit.
+                They usually just have a manufacturers stamp and an untraceable number.
+                Often when a company goes bankrupt, or has surplus at the end of a
+                production run, these transistors find their way into hobbyist bargain packs.
+                There is no way that you can trace data on these devices, so they are only
+                suitable as LED drivers, buffers, etc, where the actual parameters are not 
+                important. Check carefully before buying.
+
+                Once you have identified your part, a trip to the data sheet or equivalents
+                book is called for (anyone know of an on-line equivalents list?).
+
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>      
+    </div>
+  </body>
+</html>
